@@ -1,0 +1,18 @@
+""" Program to print ASCII Value of a character Python code using ord
+function :
+
+ord() : It converts the given string of length one, returns
+an integer representing the Unicode code point of the character. For
+example, ord(‘a’) returns the integer 97.
+"""
+
+# Python program to print
+# ASCII Value of Character
+
+# In c we can assign different
+# characters of which we want ASCII value
+#A=65 AND Z=90
+#a=97 & z = 122
+c = '@'
+# print the ASCII value of assigned character in c
+print("The ASCII value of '" + c + "' is", ord(c))
