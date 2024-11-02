@@ -1,0 +1,21 @@
+"""class car:  
+    def __init__(self,modelname, year):  
+        self.modelname = modelname  
+        self.year = year  
+    def display(self):  
+        print(self.modelname,self.year)  
+  
+c1 = car("Toyota", 2016)  
+c1.display()  
+"""
+class Employee:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+    def show(self):
+        print(self.name, self.id)
+
+        
+a= Employee('abhsbx', 67)
+print(a)
+print(a.show())
