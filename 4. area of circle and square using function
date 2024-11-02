@@ -1,0 +1,12 @@
+def circle():
+    r = int(input("enter radius:"))
+    area = 3.14*r*r
+    print("area of circle is",area)
+
+def square():
+    s=int(input("enter side:"))
+    area2=s*s
+    print("area of sq. is:", area2)
+
+circle()
+square()
