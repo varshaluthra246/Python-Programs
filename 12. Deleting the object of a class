@@ -1,0 +1,18 @@
+class Employee:  
+    id = 10  
+    name = "Varsha"  
+  
+    def display(self):  
+        print(self.id, self.name)  
+    # Creating a emp instance of Employee class  
+  
+emp = Employee()  
+  
+# Deleting the property of object  
+#del emp.id
+#del emp.name
+print(emp.name)
+print(emp.id)
+# Deleting the object itself  
+del emp  
+emp.display()  
