@@ -1,0 +1,16 @@
+"""
+Python Program for cube sum of first n natural numbers
+Print the sum of series 13 + 23 + 33 + 43 + …….+ n3 till n-th term.
+"""
+# Python code
+# to print cube sum of first n natural numbers
+# using inbuilt function pow()
+
+n=5
+s=0
+# iterating loop up to given number n
+for i in range(1,n+1):
+	# adding cube sum using pow() function
+	s=s+pow(i,3)
+print(s)
+
