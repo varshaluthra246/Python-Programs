@@ -1,0 +1,72 @@
+input_string = input('Enter elements of a list separated by space ')
+print("\n")
+user_list = input_string.split()
+# print list
+print('list: ', user_list)
+
+# convert each item to int type
+for i in range(len(user_list)):
+    # convert each item to int type
+    user_list[i] = int(user_list[i])
+
+# Calculating the sum of list elements
+print("Sum = ", sum(user_list))
+
+# 2nd program of list
+
+number_list = []
+n = int(input("Enter the list size "))
+
+print("\n")
+for i in range(0, n):
+    print("Enter number at index", i, )
+    item = int(input())
+    number_list.append(item)
+print("User list is ", number_list)
+
+# 3rd program of list
+
+lst = [ ] 
+n = int(input("Enter number of elements : ")) 
+  
+for i in range(0, n): 
+    ele = [input(), int(input())] 
+    lst.append(ele) 
+      
+print(lst)
+
+# 4th program of list
+
+shopList = [] 
+maxLengthList = 6
+while len(shopList) < maxLengthList:
+    item = input("Enter your Item to the List: ")
+    shopList.append(item)
+    print (shopList)
+print ("That's your Shopping List")
+print (shopList)
+
+# 5th program of list ==> STACK PROGRAM
+
+list1=[]
+c="y"
+while (c=="y"):
+    print("1. Add element to the list")    
+    print("2. remove element to the list")    	
+    print("3. Display list")   
+    choice=int(input("enter your choice:  "))    
+    if (choice==1):
+        a=input("Enter any number :")
+        list1.append(a)    
+    elif (choice==2):
+        if (s==[]):
+            print("List is empty")
+        else:
+            print("Deleted element is : ",list1.pop())   
+    elif(choice==3):
+        l=len(list1)
+        for i in range(l-1,-1,-1):
+            print (list1[i])  
+    else:
+        print("Wrong input")
+        c=input("Do you want to continue or not? ")
