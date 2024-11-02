@@ -1,0 +1,64 @@
+# 1st Graph:
+import matplotlib.pyplot as plt
+import csv
+x=[]
+y=[]
+with open('test.txt','r') as csvfile:
+    plots = csv.reader(csvfile)
+    for col in plots:
+        x.append(col[0])
+        y.append(col[1])
+plt.plot(x,y,label='file')
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('test graph')
+plt.legend()
+plt.show()
+
+# 2nd Graph:
+
+import matplotlib.pyplot as plt
+import csv
+x=[]
+y=[]
+with open('test.csv','r') as csvfile:
+    plots = csv.reader(csvfile)
+    for col in plots:
+        x.append(col[0])
+        y.append(col[1])
+plt.plot(x,y,label='file', color='green')
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('test graph')
+#plt.legend()
+plt.show()
+ 
+
+# 3rd Graph:
+import matplotlib.pyplot as plt
+import pandas as pd
+df=pd.read_csv('C:\\Users\\Sonia Luthra\\Desktop\\Main Folder\\Programming Languages\\Python programs\\bar_data.csv')
+print(df)
+x=df['months']
+h=df['total sales']
+plt.plot(x,h,width=[0.4,0.2,0.7], color=['red','green','yellow'], edgecolor='black', linewidth="2")
+plt.xlabel("Months of sales")
+plt.ylabel("total sales in Lakh Rs. ")
+plt.show()
+
+# 4th Graph:
+import matplotlib.pyplot as plt
+import csv
+x=[]
+y=[]
+with open('bar_data.txt','r') as csvfile:
+    plots = csv.reader(csvfile)
+    for col in plots:
+        x.append(col[0])
+        y.append(col[1])
+plt.plot(x,y,label='file')
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('test graph')
+plt.legend()
+plt.show()
