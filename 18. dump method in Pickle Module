@@ -1,0 +1,21 @@
+# Pickle module using dump() method
+#pickling convert structure into byte stream and unpickling vice versa
+import pickle
+def write():
+    f = open("binaryWrite.dat",'wb')
+    list1=['computer','maths','English','physics','chemistry']
+    #using dictionary
+    dic={'comp':100,'maths':98,'English':74,'physics':54,'chemistry':23}
+    pickle.dump(list1,f)
+    pickle.dump(dic,f)
+    f.close()
+def read():
+    f=open("binaryWrite.dat",'rb')
+    lst=pickle.load(f)
+    d=pickle.load(f)
+    print(lst)
+    print(d)
+    f.close()
+write()
+print("data written successfully in file")
+read()
